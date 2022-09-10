@@ -642,18 +642,18 @@ const coolsite_more = ref('g_more g_gray-red coolsite-more');
                   <!-- 分组二 -->
                   <div class="coolsite-group" id="coolsite-group2">
                     <div class="g-bg1 coolsite-bar" monkey="erji">
-                      <Link href="http://www.hao123.com/auto">汽车</Link>
-                      <Link href="http://life.hao123.com/jiaotong/?tn=kuzhan_site">交通违章</Link>
-                      <Link href="http://life.hao123.com/kuaidi">快递</Link>
-                      <Link href="http://www.hao123.com/fangchan">房产</Link>
-                      <Link href="http://www.hao123.com/bank">银行</Link>
-                      <Link href="http://www.hao123.com/zhaopin">招聘</Link>
-                      <Link href="http://soft.hao123.com/">软件</Link>
-                      <Link href="http://www.hao123.com/hardware">数码</Link>
-                      <Link href="http://www.hao123.com/vr">VR科技</Link>
-                      <Link href="http://www.hao123.com/shequ">社区</Link>
-                      <Link href="http://www.hao123.com/love">交友</Link>
-                      <Link href="http://www.hao123.com/qq">QQ</Link>
+                      <Link type="bar" href="http://www.hao123.com/auto">汽车</Link>
+                      <Link type="bar" href="http://life.hao123.com/jiaotong/?tn=kuzhan_site">交通违章</Link>
+                      <Link type="bar" href="http://life.hao123.com/kuaidi">快递</Link>
+                      <Link type="bar" href="http://www.hao123.com/fangchan">房产</Link>
+                      <Link type="bar" href="http://www.hao123.com/bank">银行</Link>
+                      <Link type="bar" href="http://www.hao123.com/zhaopin">招聘</Link>
+                      <Link type="bar" href="http://soft.hao123.com/">软件</Link>
+                      <Link type="bar" href="http://www.hao123.com/hardware">数码</Link>
+                      <Link type="bar" href="http://www.hao123.com/vr">VR科技</Link>
+                      <Link type="bar" href="http://www.hao123.com/shequ">社区</Link>
+                      <Link type="bar" href="http://www.hao123.com/love">交友</Link>
+                      <Link type="bar" href="http://www.hao123.com/qq">QQ</Link>
                     </div>
                     <div class="g_clr coolsite-category">
                       <h4 class="coolsite-name-wrap">
