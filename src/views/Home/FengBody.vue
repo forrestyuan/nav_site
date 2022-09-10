@@ -751,7 +751,7 @@ const coolsite_more = ref('g_more g_gray-red coolsite-more');
                   </div>
                   <div class="coolsite-group" id="coolsite-group3">
                     <div class="g-bg1 coolsite-bar" monkey="erji">
-                      <Link href="http://game.hao123.com/">新游</Link>
+                      <Link type="bar" href="http://game.hao123.com/">新游</Link>
                       <Link type="bar" href="http://xyx.hao123.com/">小游戏</Link>
                       <Link type="bar" href="http://sy.hao123.com/">手游</Link>
                       <Link type="bar" href="http://music.hao123.com/">音乐</Link>
