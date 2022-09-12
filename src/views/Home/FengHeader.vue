@@ -54,7 +54,7 @@
                   <a :href="item.href" target="_blank">{{ item.title }}</a>
                 </li>
               </ul>
-              <span class="tag-more" @click="showMore"></span>
+              <span class="tag-more" @click.self.stop="showMore"></span>
             </div>
           </div>
         </div>
@@ -69,13 +69,12 @@ import dayjs from "dayjs";
 import { storeToRefs } from "pinia";
 import { useCommonStore } from "@/store/commonStore.js";
 const store = useCommonStore();
-const { hotnews } = storeToRefs(store);
+const { hotnews, isHotNewsTagMore } = storeToRefs(store);
 const dateObj = reactive({
   dateCn: {},
   dateNow: {},
 });
 const searchKeyword = ref("");
-const isHotNewsTagMore = ref(false);
 const hdSearch = () => {
   console.log(searchKeyword.value);
   window.open(`https://www.baidu.com/s?wd=${searchKeyword.value}`, "__blank");
@@ -96,12 +95,20 @@ const showMore = () => {
   showHotNewsTagMore(isHotNewsTagMore.value);
   isHotNewsTagMore.value = !isHotNewsTagMore.value;
 };
+const hideMore = () => {
+  showHotNewsTagMore(true);
+  isHotNewsTagMore.value = false;
+};
 onMounted(() => {
   const now = dayjs();
   dateObj.dateNow = now;
   const lunarDate = solar2lunar(now.year(), now.month() + 1, now.date());
   dateObj.dateCn = lunarDate;
   console.log(lunarDate);
+  window.onclick = () => {
+    console.log('afdsfasdf');
+    hideMore();
+  }
 });
 </script>
 <style scoped lang="less">

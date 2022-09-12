@@ -4,6 +4,7 @@ export const useCommonStore = defineStore("commonStore", {
   //头部数据
   state: () => {
     return {
+      isHotNewsTagMore: false,
       // 顶部热点新闻 模块
       hotnews: [
         {

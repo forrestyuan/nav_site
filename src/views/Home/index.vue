@@ -13,6 +13,7 @@ const onTabChange = (value) => {
   console.log(value);
   activeKey.value = value;
 };
+
 </script>
 <template>
   <!-- eslint-disable -->
@@ -26,7 +27,7 @@ const onTabChange = (value) => {
       <a-layout-sider :width="280">
         <!-- 快捷功能 -->
         <a-card class="function-box" style="width: 100%">
-          <div class="topsearch" monkey="tools1">
+          <div class="topsearch" monkey="tools1" @click.stop="hideHotnews">
             <div class="topsearch-icons g-fs12 g_clr" monkey="icon">
               <a v-for="(item, idx) in baiBaoXiangData[0]" class="topsearch-icon g-fl g-br12 g-fc25"
                 :key="`baibao_${idx}`" :href="item.href" :title="item.title">
