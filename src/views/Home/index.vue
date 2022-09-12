@@ -89,7 +89,7 @@ const onTabChange = (value) => {
 }
 
 :deep(.ant-card-body) {
-  padding: 10px 15px;
+  padding: 10px 13px;
 }
 
 :deep(.ant-card) {
@@ -116,11 +116,18 @@ const onTabChange = (value) => {
     *zoom: 1;
   }
 
+  .s-br12,
+  .g-br12,
+  .s-br12h:hover,
+  .g-br12h:hover {
+    border: 1px solid #e9e9e9;
+  }
+
   .topsearch {
     .topsearch-icons {
       text-align: center;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-evenly;
       flex-wrap: wrap;
     }
 
@@ -131,8 +138,12 @@ const onTabChange = (value) => {
       align-items: center;
       flex-wrap: wrap;
       margin: 6px 10px 0 0;
-      width: 52px;
-      height: 44px;
+      width: 55px;
+      height: 45px;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
     }
 
     .icon {

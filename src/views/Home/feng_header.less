@@ -16,7 +16,7 @@ a {
 .nav-upside,
 .nav-downside {
   height: 97px;
-  padding-top: 20px;
+  padding-top: 0px;
   box-sizing: border-box;
   background-color: #fff;
   padding-left: 10px;
@@ -57,45 +57,38 @@ a {
   margin-left: 55px;
   top: 0;
   vertical-align: top;
-  height: 60px;
+  height: 90px;
 }
 
 .cn-date {
-  display: inline-block;
+  display: flex;
+
   padding: 5px;
 
   a,
   span {
     line-height: 1.5;
   }
+  &-detail-layer {
+    display: flex;
+  }
 }
 
 //农历日期信息
 .date-week-info {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+
   margin-right: 15px;
 
-  .wrap_yibuyi {
-    height: 18px;
-    overflow: hidden;
-    position: relative;
-    width: 110%;
-
-    .item_list {
-      position: absolute;
-      transition: all ease-in-out 1s;
-      left: 0;
-    }
-
-    .date-week-info-link-layer {
-      display: inline-block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-    }
+  .date-week-info-link-layer {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -157,14 +150,16 @@ a {
       border: 0;
       background-color: dodgerblue;
       color: #fff;
-      height: 40px;
+      height: 42px;
       line-height: 40px;
       text-align: center;
       width: 120px;
       vertical-align: top;
       font-size: 16px;
       cursor: pointer;
-
+      margin-right: -3px;
+      margin-top: -1px;
+      border-radius: 0 10px 10px 0;
       &:focus {
         outline: 0;
       }
@@ -185,9 +180,8 @@ a {
   overflow: hidden;
   background: #fff;
   padding: 10px;
-  margin-top: 2px;
+  margin-top: 3px;
   box-sizing: content-box;
-
   .tag-more {
     position: absolute;
     right: 10px;

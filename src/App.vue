@@ -6,6 +6,8 @@
 html,
 body {
   background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 a {

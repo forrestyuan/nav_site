@@ -2,32 +2,18 @@
   <!-- /* eslint-disable */ -->
   <div class="nav-sec">
     <div class="nav-upside">
-      <div class="page-width">
+      <div class="page-width" style="justify-content: flex-start;padding-left: 10px;">
         <div class="logo">
           <img
             src="https://gss0.bdstatic.com/5bVWsj_p_tVS5dKfpU_Y_D3/res/r/image/2017-09-27/297f5edb1e984613083a2d3cc0c5bb36.png"
             alt="" />
         </div>
-        <div class="weather">
-          <!-- <iframe width="520" scrolling="no" height="60" frameborder="0" allowtransparency="true"
-            src="https://i.tianqi.com?c=code&id=32&icon=1&py=SZ&site=12"></iframe> -->
-          <iframe allowtransparency="true" frameborder="0" width="500" height="60" scrolling="no"
-            src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=2&d=3&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=0&a=1&c=54511&w=500&h=60&align=left"></iframe>
-        </div>
-
         <div class="cn-date">
           <div class="cn-date-detail-layer">
             <div class="date-week-info" title="点击查看万年历">
-              <span>{{ dateObj.dateCn.cMonth }}月{{ dateObj.dateCn.cDay }}日</span>
-              <span>{{ dateObj.dateCn.ncWeek }}</span>
-              <div class="wrap_yibuyi">
-                <div class="item_list">
-                  <div class="item">
-                    <span>{{ dateObj.dateCn.gzYear }} {{ dateObj.dateCn.gzMonth }}
-                      {{ dateObj.dateCn.gzDay }}</span>
-                  </div>
-                </div>
-              </div>
+              <span>{{ dateObj.dateCn.cMonth }}月{{ dateObj.dateCn.cDay }}日 {{ dateObj.dateCn.ncWeek }}</span>
+              <span>{{ dateObj.dateCn.gzYear }} {{ dateObj.dateCn.gzMonth }}
+                {{ dateObj.dateCn.gzDay }}</span>
               <a href="https://www.baidu.com/s?word=%E6%97%A5%E5%8E%86&tn=50000167_hao_pg&ie=utf-8&H123Tmp=nunew9"
                 class="date-week-info-link-layer">&nbsp;</a>
             </div>
@@ -40,6 +26,15 @@
             </div>
           </div>
         </div>
+        <div class="weather">
+          <!-- <iframe width="520" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+            src="https://i.tianqi.com?c=code&id=32&icon=1&py=SZ&site=12"></iframe> -->
+          <!-- <iframe allowtransparency="true" frameborder="0" width="500" height="60" scrolling="no"
+            src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=2&d=3&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=0&a=1&c=54511&w=500&h=60&align=left"></iframe> -->
+          <iframe allowtransparency="true" frameborder="0" width="720" height="98" scrolling="no"
+            src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=3&t=1&v=0&d=4&bd=0&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=0&a=1&c=54511&w=720&h=98&align=left"></iframe>
+        </div>
+
       </div>
     </div>
     <div class="nav-downside">

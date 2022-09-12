@@ -14,15 +14,11 @@ const props = defineProps({
     </a>
     <i class="spt"></i>
   </li>
-  <a
-    v-else-if="props.type === 'bar'"
-    :href="props.href"
-    class="s-fc20 bar-item"
-  >
+  <a v-else-if="props.type === 'bar'" :href="props.href" class="s-fc20 bar-item">
     <slot></slot>
   </a>
   <span v-else>
-    <a class="'sitelink mainlink singglelink'" :href="props.href">
+    <a class="sitelink mainlink singglelink" :href="props.href">
       <slot></slot>
     </a>
   </span>
@@ -34,6 +30,10 @@ const props = defineProps({
   padding: 0 4px;
   display: inline-block;
   *zoom: 1;
+}
+
+a.sitelink {
+  padding: 0 7px;
 }
 
 .option {
@@ -61,6 +61,6 @@ const props = defineProps({
 }
 
 .bar-item {
-  padding: 0 10px;
+  padding: 0 14px;
 }
 </style>
